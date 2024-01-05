@@ -2,7 +2,7 @@ const path = require('path'); //stdlib
 //help us build the path from compiled.js to inbox.sol file, cross-platform compatibility guaranteed
 const fs = require('fs'); //stdlib
 const solc = require('solc'); 
-const inboxPath = path.resolve(__dirname, 'contracts', 'inbox.sol');
+const inboxPath = path.resolve(__dirname, 'contracts', 'Inbox.sol');
 //__dirname takes us from the root folder to the inbox folder
 const source = fs.readFileSync(inboxPath, 'utf8');
 //read in the source code from sol file, utf8 encoding used for inbox.sol
